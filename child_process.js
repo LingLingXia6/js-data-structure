@@ -8,5 +8,5 @@ console.log('subProcess pid', ls.pid);
 console.log("subprocess env ", ls.env);
 // childProcess 代表的是 Readable Stream
 ls.stdout.on('data', (data) => {
-  // console.log('data', data,data.toString('utf-8'));
+  console.log('data', data,data.toString('utf-8'));
 })
